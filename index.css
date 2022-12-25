@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100&display=swap');
+
+html{
+    background-color: #273036;
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+    display: grid;
+
+    grid-template: 50px 1fr 1fr 100px / repeat(3, 1fr);
+
+    gap: 110px; 
+    padding: 10px; 
+    box-sizing: border-box;
+    color: white;
+}
+
+/*Grid Columns*/
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 10px;
+    width: auto;
+    height: 7vh;
+    background-color: #d0d9d2;
+}
+
+.header h1{
+  color: black;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.box{
+    margin-left: auto;
+    margin-top: -9vh; 
+    margin-right: 0;
+}
+
+nav{
+  margin-top: -11vh;
+  margin-left: 40%;
+}
+
+nav ul{
+  list-style: none;
+}
+
+.content-image{
+    width: 40vh;
+    height: 40vh;
+    clip-path: circle(50%);
+
+    margin-top: 20%;
+}
+
+.content-large{
+    grid-row-start: 2;
+    grid-row-end: span 2;
+
+    padding: 10px;
+
+    box-shadow:
+    6.4px 6.7px 5.3px rgba(0, 0, 0, 0.109),
+    21.4px 22.3px 17.9px rgba(0, 0, 0, 0.161),
+    96px 100px 80px rgba(0, 0, 0, 0.27);
+}
+
+.footer{
+    grid-column: 1 / span 3;
+}
+
+.footer-content{
+    width: 200px;
+    margin: 0 auto;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+/*corner ribbon*/
+.box {
+    width: 100px; height: 300px;
+    position: relative;
+  }
+  .ribbon {
+    position: absolute;
+    right: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px; height: 75px;
+    text-align: right;
+  }
+  .ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#B6BAC9 0%, #273036 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; right: -21px;
+  }
+  .ribbon span::before {
+    content: "";
+    position: absolute; left: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid #273036;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #273036;
+  }
+  .ribbon span::after {
+    content: "";
+    position: absolute; right: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #273036;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #273036;
+  }

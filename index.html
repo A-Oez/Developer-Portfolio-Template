@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body>
+        <div class = "container">
+            <div class="header">
+                <h1>Junior Developer Portfolio</h1>
+                <nav>
+                    <ul class = "nav_links">
+                        <li class = "nav_items">
+                            <!--ADD ICONS + LINKS-->
+                           <a href="https://www.linkedin.com"><img src=""></a>
+                           <a href="https://twitter.com"><img src=""></a>
+                           <a href="https://www.xing.com"><img src=""></a>
+                           <a href="https://github.com"><img src=""></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="box">
+                    <div class="ribbon"><span><!--ADD NAME--></span></div>
+                </div>
+            </div>
+
+            <div class="content-overwiev">
+                <h2>Overview</h2>           
+                <a>Hey!</a>
+                <!--ADD Description-->
+            </div>
+
+            <div class="content-large">
+                <h3>Technologies</h3>
+                <!--ADD SKILLS-->
+            </div>
+            
+            <img class="content-image" src="https://i1.wp.com/mtvtc.org/wp-content/uploads/2020/07/cropped-coding-computer-data-depth-of-field-577585-scaled-1.jpg?ssl=1">
+
+            <div class = "footer">
+                <div class = "footer-content">
+                    <a>~ <!--ADD NAME--> /</a>
+                    <a id="currentDate"></a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let time = document.getElementById("currentDate");
+            let d = new Date();
+            time.innerHTML = d.toLocaleDateString();
+        </script>
+
+    </body>
+</html>
